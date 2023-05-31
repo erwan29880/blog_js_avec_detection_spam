@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <script type="module" src="/app.js" defer></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <h1>Test blog</h1>
+
+    <section id="comments" class="comments">
+        <div id="comment" class="comment" contenteditable></div>
+        <button id="post" class="post">post</button>
+
+        <ul class="commentsList" id="commentsList">
+            <li>
+                <span class="username">someUser</span>
+                <span class="timestamp"></span>
+                <p>my first comment</p>
+            </li>
+        </ul>
+    </section>
+</body>
+</html>
